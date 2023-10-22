@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "a7e0502a-33c8-4a99-8d28-f8a650ad0414",
+		"name": "ShoppingDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21517537",
+		"_collection_link": "https://web.postman.co/workspace/My-Workspace~87fd2c11-30b2-49eb-829d-a30d47cb5342/collection/21517537-a7e0502a-33c8-4a99-8d28-f8a650ad0414?source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Mobile\":\"8355964802\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw/exec?id=1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw&method=authenticate",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw",
+						"exec"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw"
+						},
+						{
+							"key": "method",
+							"value": "authenticate"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertOrUpdateAddress",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Address1\":\"Rahude\",\n    \"Address2\":\"Satara\",\n    \"Address3\":\"Navade Colony\",\n    \"Mobile\":\"8355964802\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw/exec?id=1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw&method=insertOrUpdateAddress",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw",
+						"exec"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw"
+						},
+						{
+							"key": "method",
+							"value": "insertOrUpdateAddress"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Book Order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Mobile\":\"8355964802\",\n    \"OrderNumber\":\"BO001\",\n    \"Items\":\"[{'p1'},{'p2'},{'p3'},{'p3'},{'p3'},{'p3'},{'p3'}]\",\n    \"OrderDateTime\":\"2023-10-21 10:29:20\",\n    \"TotalPrice\":\"1000\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw/exec?id=1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw&method=bookOrder",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw",
+						"exec"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw"
+						},
+						{
+							"key": "method",
+							"value": "bookOrder"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Products",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw/exec?id=1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw&method=getProducts",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw",
+						"exec"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw"
+						},
+						{
+							"key": "method",
+							"value": "getProducts"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Banners",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw/exec?id=1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw&method=getBanners",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw",
+						"exec"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw"
+						},
+						{
+							"key": "method",
+							"value": "getBanners"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://script.google.com/macros/s/AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw/exec?id=1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw&method=getOrders",
+					"protocol": "https",
+					"host": [
+						"script",
+						"google",
+						"com"
+					],
+					"path": [
+						"macros",
+						"s",
+						"AKfycbzE3C9Igv2n0JYeuGYORlv8yIc6yhilabqPzBNyaxPvg39sXt4M7hlICnw5_vZHWC37Kw",
+						"exec"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1Zgh0YqeNrPrseZ3U_uT49ZAs0R_dYy5XHU6BeYPlMtw"
+						},
+						{
+							"key": "method",
+							"value": "getOrders"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
